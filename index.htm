@@ -1,0 +1,66 @@
+<html>
+  <head>
+<style type="text/css">
+    #playing {    
+        padding: 40px 30px;
+        background: black;
+        width: 480px;
+        height: 480px;
+        margin: auto auto;
+    }
+    #mycanvas {
+      float: left;
+    }
+    .shadow {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+        -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+        -khtml-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    }
+    #menu {
+        width: 150px;
+        height: 480px;
+        float: left;
+        margin-left:30px;
+    }
+    #nextCube {
+        background-color: rgba(23, 23, 23, 1);
+        float: left;
+    }
+    .info {
+        float: left;
+        width: 150px;
+        height: 290px;
+        color: white;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .control {
+        width: 150px;
+        float: left;
+    }
+
+</style>
+  </head>
+  <body style="background: wheat;">
+    <div id="playing" class="shadow">
+      <canvas id="mycanvas" width="300" height="480"></canvas>
+      <div id="menu">
+        <canvas id="nextCube" width="150" height="150"></canvas>
+        <div class="info">
+          Score: <span id="score">0</span>
+        </div>
+        <div class="control">
+          <input type="button" id="start" value="Start" onclick="start();" />
+          <input type="button" id="stop" value="Stop" style="display: none;" onclick="stop();" />
+          <input type="button" id="resume" value="Resume" style="display: none;" onclick="resume();" />
+          <input type="button" id="pause" value="Pause" disabled="disabled" onclick="pause();"/>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

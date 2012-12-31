@@ -1,0 +1,43 @@
+#playing {    
+    padding: 40px 30px;
+    background: black;
+    width: 470px;
+    height: 480px;
+}        
+.shadow {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    -khtml-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+}
+#mycanvas {
+	float: left;
+}
+#menu {
+	width: 140px;
+	height: 480px;
+	float: left;
+	margin-left:30px;
+}
+#nextCube {
+	background-color: rgba(23, 23, 23, 1);
+	width: 140px;
+	height: 140px;
+	float: left;
+}
+
+.info {
+	float: left;
+	width: 140px;
+	height: 320px;
+}
+
+.control {
+	float: left;
+}
+
+.text {
+	float: left;
+	font-weight: bold;
+	color: white;
+}
